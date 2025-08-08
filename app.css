@@ -1,0 +1,174 @@
+/* Root Theme */
+/* Add to index.css or App.css */
+@import 'leaflet/dist/leaflet.css';
+
+:root {
+  --primary-color: #2563eb;    /* blue-600 */
+  --accent-color: #facc15;     /* yellow-400 */
+  --text-color: #1f2937;       /* gray-800 */
+  --bg-color: #f9fafb;         /* gray-100 */
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  --radius: 12px;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* NAVBAR */
+nav {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow);
+}
+nav .nav-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+nav button {
+  background: white;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  margin: 0 0.25rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+nav button:hover {
+  background-color: var(--accent-color);
+  color: black;
+}
+
+/* RIGHTS PAGE */
+.rights-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.main-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+.rights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.right-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.right-card:hover {
+  transform: scale(1.03);
+}
+.right-card.active {
+  background-color: var(--accent-color);
+}
+.problem-list {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+.problem-item {
+  background-color: #f3f4f6;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* HEADINGS AND TEXT */
+h1, h2, h3 {
+  color: var(--text-color);
+}
+p {
+  line-height: 1.5;
+}
+
+/* BUTTONS */
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.button-primary:hover {
+  background-color: var(--accent-color);
+  color: black;
+}
+
+/* QUIZ / STORIES / ALERTS */
+.module-card {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  transition: all 0.3s;
+}
+.module-card:hover {
+  transform: scale(1.02);
+  background: #fef9c3;
+}
+.module-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 2rem;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #e5e7eb;
+}
+
+/* RESPONSIVE TEXT */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+}

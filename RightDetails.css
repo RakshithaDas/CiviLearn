@@ -1,0 +1,46 @@
+.right-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.right-title {
+  font-size: 2rem;
+  color: #f50a0a;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.right-description {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.problems-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.problem-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 320px;
+  transition: transform 0.2s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+}
+
+.problem-title {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
