@@ -1,0 +1,56 @@
+.rights-container {
+  padding: 2rem;
+  background: #f9fafb;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+.rights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.right-card {
+  background-color: #ffffff;
+  border: 2px solid #dbeafe;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  width: 300px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.right-card:hover {
+  background-color: #eff6ff;
+  transform: translateY(-2px);
+}
+
+.right-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+}
+
+.problems-list {
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.problem-item {
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
